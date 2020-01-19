@@ -4,6 +4,7 @@
 # [for s in var.list2: upper(s)]
 # [for k, v in var.map1: v]
 # {for k, v in var.map1: v => k}
+# {for k, v in merge({ name= "instance1" }, var.map1): k => lower(v)}
 
 variable "list1" {
   type = list(string)
