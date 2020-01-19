@@ -1,1 +1,3 @@
 https://blog.gruntwork.io/terraform-tips-tricks-loops-if-statements-and-gotchas-f739bbae55f9
+
+https://github.com/lenvolk/intro-to-terraform
