@@ -5,3 +5,4 @@
 az vm image list -p "Canonical"
 az vm image list -p "Microsoft"
 ```
+c
