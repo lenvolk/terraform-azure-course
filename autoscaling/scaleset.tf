@@ -49,7 +49,7 @@ resource "azurerm_virtual_machine_scale_set" "demo" {
   os_profile {
     computer_name_prefix = "demo"
     admin_username       = "demo"
-    custom_data          = "#!/bin/bash\n\napt-get update && apt-get install -y nginx && systemctl enable nginx && systemctl start nginx"
+    custom_data          = "#!/bin/bash\n\napt-get update && sudo apt-get install stress -y && apt-get install -y nginx && systemctl enable nginx && systemctl start nginx"
   }
 
   os_profile_linux_config {
