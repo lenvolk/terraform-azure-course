@@ -8,8 +8,10 @@ variable "prefix" {
 }
 
 variable "ssh-source-address" {
-  type    = string
-  default = "*"
+  # type    = string
+  # default = "*"
+  type    = list(string)
+  default = []
 }
 
 variable "private-cidr" {

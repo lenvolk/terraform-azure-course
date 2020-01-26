@@ -6,8 +6,14 @@ slice(var.mylist, 0,2)
 
 
 ####
-ssh-keygen -f mykey
-ssh 104.104.22.33 -i mykey -l demo
+# Generate ssh key
+```
+ssh-keygen -t rsa -b 4096 -f mykey
+
+# Ssh into virtual machine
+The output of terraform shows the public ip
+```
+ssh demo@PUBLIC_IP_HERE-i mykey
 
 
 ### to check how many cpu

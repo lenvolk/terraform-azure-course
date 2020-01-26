@@ -23,7 +23,7 @@ terraform apply
 The output of terraform shows the public ip
 
 ```
-ssh demo@PUBLIC_IP_HERE-i mykey
+ssh demo@104.45.4.100 -i mykey
 ```
 
 # Install MySQL client & Connect to MySQL from virtual machine
@@ -32,7 +32,8 @@ The output of terraform shows the dns of the MySQL
 ```
 sudo apt-get update
 sudo apt-get install mysql-client-5.7
-mysql -h DNSNAMEHERE -u mysqladmin@mysql-training -p
+mysql -h mysql-training2020.mysql.database.azure.com -u mysqladmin@mysql-training2020 -p
+show databases;
 ```
 
 # Cleanup Demo

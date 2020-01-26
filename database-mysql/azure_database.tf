@@ -1,5 +1,5 @@
 resource "azurerm_mysql_server" "demo" {
-  name                = "mysql-training"
+  name                = "mysql-training2020"
   location            = azurerm_resource_group.demo.location
   resource_group_name = azurerm_resource_group.demo.name
 
@@ -17,7 +17,7 @@ resource "azurerm_mysql_server" "demo" {
   }
 
   administrator_login          = "mysqladmin"
-  #administrator_login_password = "SETSECUREPASS"
+  administrator_login_password = "Volkovinskiy2019"
   version                      = "5.7"
   ssl_enforcement              = "Enabled"
 }

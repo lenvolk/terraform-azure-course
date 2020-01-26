@@ -23,7 +23,7 @@ terraform apply
 The output of terraform shows the public ip
 
 ```
-ssh demo@PUBLIC_IP_HERE-i mykey
+ssh demo@13.93.64.224 -i mykey
 ```
 
 # Add microsoft repository and install mssql tools
@@ -39,9 +39,13 @@ source ~/.bashrc
 
 # Connect to mssql database
 *The output of terraform shows the dns of the MySQL*
+terraform show
 
 ```
 sqlcmd -S DNSNAMEHERE -U sqladmin -P 'REPLACEWITHPASSWORD' -q "SELECT name FROM master.sys.databases"
+
+sqlcmd -S sqlserver-y6gz1.database.windows.net -U sqladmin -P 'Volkovinskiy@2019' -q "SELECT name FROM master.sys.databases"
+
 ```
 
 # Cleanup Demo
