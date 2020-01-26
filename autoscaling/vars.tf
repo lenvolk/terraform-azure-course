@@ -8,6 +8,8 @@ variable "zones" {
   default = []
 }
 variable "ssh-source-address" {
-  type    = string
-  default = "*"
+  # type    = string
+  # default = "*"
+  type    = list(string)
+  default = []
 }
