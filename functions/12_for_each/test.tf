@@ -27,9 +27,5 @@ output "for_value_output" {
   value = [ for x in var.Lbs: x.static_ip if x.suffix_name == "iis"][0]
 }
 output "for_list_output" {
-  value = [ for x in var.Lbs: x.static_ip]  
+  value = [ for x in var.Lbs: x.static_ip]#[0]  
 }
-
-# output "lookup_output" {
-#   value = lookup([ for x in var.Lbs: x.static_ip])["static_ip"]  
-# }
