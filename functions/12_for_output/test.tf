@@ -24,7 +24,7 @@ variable "Lbs" {
 
 
 output "for_value_output" {
-  value = [ for x in var.Lbs: x.static_ip if x.suffix_name == "iis"][0]
+  value = [ for x in var.Lbs: x.static_ip if x.suffix_name == "apa"][0]
 }
 output "for_list_output" {
   value = [ for x in var.Lbs: x.static_ip]#[0]  
